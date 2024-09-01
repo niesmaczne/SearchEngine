@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "searchengine-crawler"
+version = "0.1.0"
+description = ""
+authors = ["Nikola Borska <nikola.a.borska@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0.2"
+feedparser = "^6.0.11"
+sqlalchemy = "^2.0.32"
+beautifulsoup4 = "^4.12.3"
+psycopg2-binary = "^2.9.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+isort = "^5.13.2"
+mypy = "^1.11.2"
+types-beautifulsoup4 = "^4.12.0.20240511"
+types-html5lib = "^1.1.11.20240806"
+types-psycopg2 = "^2.9.21.20240819"
+types-pyyaml = "^6.0.12.20240808"
+typing-extensions = "^4.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
